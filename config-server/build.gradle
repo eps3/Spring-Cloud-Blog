@@ -1,3 +1,7 @@
 bootRepackage {
-	mainClass = 'cn.sheep3.DemoApplication'
+	mainClass = 'cn.sheep3.cloud.config.Applocation'
+}
+
+dependencies {
+	compile('org.springframework.cloud:spring-cloud-config-server')
 }

@@ -34,9 +34,7 @@ subprojects {
     }
 
     springBoot {
-        maven { url 'http://repo2.maven.org/maven2' }
-        mavenLocal()
-        mavenCentral()
+
     }
 
     repositories {
@@ -67,8 +65,6 @@ subprojects {
         compile('org.springframework.cloud:spring-cloud-starter-config')
 
         //Sql
-        compile('org.xerial:sqlite-jdbc:3.8.11.2')
-        compile('com.enigmabridge:hibernate4-sqlite-dialect:0.1.2')
         compile('mysql:mysql-connector-java')
 
         //Cache

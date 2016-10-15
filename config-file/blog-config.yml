@@ -1,0 +1,58 @@
+spring:
+  profiles: prod
+  #SQL_CONN_SETTING
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    testOnBorrow: true
+    validationQuery: SELECT 1
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  velocity:
+    suffix: .html
+    view-names: /index,/page,/footer,/header,/page,/sidebar,/list,/admin/edit,/admin/footer,/admin/header,/admin/list,/admin/login,/admin/sidebar,/error/403,/admin/person-setting,/tag/list,/tag/detail
+    prefix: /templates
+    #resource-loader-path: classpath:/templates/
+    cache: true
+    check-template-location: false
+server:
+  port: 80
+
+---
+spring:
+  profiles: devel
+  #SQL_CONN_SETTING
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    testOnBorrow: true
+    validationQuery: SELECT 1
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  velocity:
+    suffix: .html
+    view-names: /index,/page,/footer,/header,/page,/sidebar,/list,/admin/edit,/admin/footer,/admin/header,/admin/list,/admin/login,/admin/sidebar,/error/403,/admin/person-setting,/tag/list,/tag/detail
+    prefix: /templates
+    #resource-loader-path: classpath:/templates/
+    cache: true
+    check-template-location: false
+server:
+  port: 8081
