@@ -1,0 +1,3 @@
+bootRepackage {
+	mainClass = 'cn.sheep3.DemoApplication'
+}
