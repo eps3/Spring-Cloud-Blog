@@ -1,6 +1,8 @@
 spring:
-  #profiles: devel
-  #SQL_CONN_SETTINGupup
+  application:
+    name: client-post
+  profiles:
+    active: devel
   datasource:
     url: jdbc:mysql://localhost:3306/blog
     username: root
