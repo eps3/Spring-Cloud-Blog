@@ -1,2 +1,5 @@
 rootProject.name = 'spring-cloud-blog'
-include 'config-server'
+include 'server-config'
+include 'server-eureka'
+include 'client-post'
+

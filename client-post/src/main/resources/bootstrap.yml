@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: client-post
+  profiles:
+    active: devel
+  cloud:
+    config:
+      uri:  http://sheep3.cn:8001/
+

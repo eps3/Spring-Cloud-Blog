@@ -1,0 +1,8 @@
+bootRepackage {
+    mainClass = 'cn.sheep3.cloud.client.post.Applocation'
+}
+
+dependencies {
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
+    compile('org.springframework.cloud:spring-cloud-starter-config')
+}

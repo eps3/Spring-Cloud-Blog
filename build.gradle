@@ -62,7 +62,7 @@ subprojects {
 
 
         //Spring Cloud
-        compile('org.springframework.cloud:spring-cloud-starter-config')
+        compile('org.springframework.cloud:spring-cloud-starter-eureka')
 
         //Sql
         compile('mysql:mysql-connector-java')
