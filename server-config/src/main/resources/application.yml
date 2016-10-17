@@ -6,5 +6,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/sheepmen/Blog-Cloud-Config
-          searchPaths: cloud-config
+          uri: https://github.com/sheepmen/Spring-Cloud-Blog
+          searchPaths: config-file
