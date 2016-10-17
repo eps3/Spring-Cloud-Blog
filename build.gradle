@@ -52,31 +52,6 @@ subprojects {
         //Lombok
         compileOnly('org.projectlombok:lombok:1.16.10')
 
-        //Spring Boot
-        compile('org.springframework.boot:spring-boot-starter-aop')
-        compile('org.springframework.boot:spring-boot-starter-web')
-        compile('org.springframework.boot:spring-boot-starter-velocity')
-        compile('org.springframework.boot:spring-boot-starter-data-jpa')
-        compile('org.springframework.boot:spring-boot-devtools')
-        compile('org.springframework.boot:spring-boot-starter-security')
-
-
-        //Spring Cloud
-        compile('org.springframework.cloud:spring-cloud-starter-eureka')
-
-        //Sql
-        compile('mysql:mysql-connector-java')
-
-        //Cache
-        compile('net.sf.ehcache:ehcache')
-
-        //@NotNull
-        compile('org.jetbrains:annotations:15.0')
-
-        //Util
-        compile('joda-time:joda-time:2.5')
-
-
         //Test
         testCompileOnly('org.projectlombok:lombok:1.16.10')
         testCompile('org.springframework.boot:spring-boot-starter-test')

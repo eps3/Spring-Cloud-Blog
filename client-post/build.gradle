@@ -5,4 +5,26 @@ bootRepackage {
 dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-eureka')
     compile('org.springframework.cloud:spring-cloud-starter-config')
+
+    //Spring Boot
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-velocity')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile('org.springframework.boot:spring-boot-starter-security')
+
+
+    //Sql
+    compile('mysql:mysql-connector-java')
+
+    //Cache
+    compile('net.sf.ehcache:ehcache')
+
+    //@NotNull
+    compile('org.jetbrains:annotations:15.0')
+
+    //Util
+    compile('joda-time:joda-time:2.5')
+
 }
