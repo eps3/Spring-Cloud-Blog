@@ -5,5 +5,5 @@ spring:
     active: devel
   cloud:
     config:
-      uri:  http://sheep3.cn:8001/
+      uri:  http://localhost:8001/
 

@@ -1,6 +1,6 @@
 package cn.sheep3.cloud.client.post.model;
 
-import cn.sheep3.model.status.CodeStatus;
+import cn.sheep3.cloud.client.post.model.status.CodeStatus;
 import lombok.Getter;
 import org.apache.commons.collections.map.HashedMap;
 

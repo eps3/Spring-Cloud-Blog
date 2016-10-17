@@ -1,6 +1,7 @@
 package cn.sheep3.cloud.client.post.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "t_users")
 @NoArgsConstructor
+@JsonIgnoreProperties({ "handler","hibernateLazyInitializer" })
 public class User extends BaseEntity{
 
     /*@OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade = CascadeType.ALL)

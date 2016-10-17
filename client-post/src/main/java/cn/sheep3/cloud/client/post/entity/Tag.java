@@ -1,6 +1,7 @@
 package cn.sheep3.cloud.client.post.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "t_tags")
+@JsonIgnoreProperties({ "handler","hibernateLazyInitializer" })
 public class Tag extends BaseEntity{
 
     public Tag(String name){

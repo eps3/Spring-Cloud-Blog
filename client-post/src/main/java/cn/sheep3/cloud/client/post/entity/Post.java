@@ -4,6 +4,7 @@ import cn.sheep3.cloud.client.post.model.status.PostLock;
 import cn.sheep3.cloud.client.post.model.status.PostStatus;
 import cn.sheep3.cloud.client.post.model.status.PostType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.Cascade;
@@ -18,6 +19,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "t_posts")
+@JsonIgnoreProperties({ "handler","hibernateLazyInitializer" })
 public class Post extends BaseEntity{
 
     /**
