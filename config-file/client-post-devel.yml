@@ -23,5 +23,8 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8090/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
 server:
   port: 8081
